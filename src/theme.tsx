@@ -11,8 +11,8 @@ const breakpoints = {
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Open Sans', sans-serif`,
-    body: `'Raleway', sans-serif`,
+    heading: `'Heading Font', sans-serif`,
+    body: `'Body Font', sans-serif`,
   },
   semanticTokens: {
     colors: {
