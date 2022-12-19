@@ -4,6 +4,7 @@ import { Container } from './Container'
 
 export const CTA = () => (
   <Container
+    bgColor="black"
     flexDirection="row"
     position="fixed"
     bottom={0}
@@ -15,10 +16,8 @@ export const CTA = () => (
       as={ChakraLink}
       isExternal
       href="https://chakra-ui.com"
-      variant="outline"
-      colorScheme="green"
-      rounded="button"
-      flexGrow={1}
+      variant="customVariant"
+      colorScheme="brand"
       mx={2}
       width="full"
     >
@@ -28,10 +27,7 @@ export const CTA = () => (
       as={ChakraLink}
       isExternal
       href="https://github.com/vercel/next.js/blob/canary/examples/with-chakra-ui-typescript"
-      variant="solid"
-      colorScheme="green"
-      rounded="button"
-      flexGrow={3}
+      variant="customVariant"
       mx={2}
       width="full"
     >
