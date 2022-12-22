@@ -34,6 +34,6 @@ export const CTA = () => (
       View Repo
     </Button>
 
-    <Input variant="pill" placeholder='Name' />
+    <Input variant="custom" placeholder='Name' />
   </Container>
 )

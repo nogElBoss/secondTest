@@ -1,14 +1,14 @@
 import { inputAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 
 const { definePartsStyle, defineMultiStyleConfig } =
     createMultiStyleConfigHelpers(inputAnatomy.keys)
 
-const pill = definePartsStyle({
+const custom = definePartsStyle({
     field: {
         border: '0px',
         color: "white",
-        background: '#2e2e2e',
+        background: "inputGray",
         borderRadius: '0px',
         fontFamily: "body",
         _placeholder: {
@@ -18,5 +18,5 @@ const pill = definePartsStyle({
 })
 
 export const inputTheme = defineMultiStyleConfig({
-    variants: { pill },
+    variants: { custom },
 })

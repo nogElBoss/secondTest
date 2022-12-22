@@ -37,6 +37,7 @@ const theme = extendTheme({
     },
   },
   colors: {
+    inputGray: '#2e2e2e',
     black: '#131313',
     customBlue: {
       500: '#10bcdb',
