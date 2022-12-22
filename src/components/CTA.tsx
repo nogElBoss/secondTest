@@ -1,4 +1,4 @@
-import { Link as ChakraLink, Button } from '@chakra-ui/react'
+import { Link as ChakraLink, Button, Input } from '@chakra-ui/react'
 
 import { Container } from './Container'
 
@@ -33,5 +33,7 @@ export const CTA = () => (
     >
       View Repo
     </Button>
+
+    <Input variant="pill" placeholder='Name' />
   </Container>
 )

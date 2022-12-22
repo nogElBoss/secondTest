@@ -1,5 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
 import { buttonTheme } from './components/atoms/Button'
+import { inputTheme } from './components/atoms/InputField'
 
 const fonts = { mono: `'Menlo', monospace` }
 
@@ -11,7 +12,10 @@ const breakpoints = {
 }
 
 const theme = extendTheme({
-  components: { Button: buttonTheme },
+  components: {
+    Button: buttonTheme,
+    Input: inputTheme
+  },
   fonts: {
     heading: `'Heading Font', sans-serif`,
     body: `'Body Font', sans-serif`,
