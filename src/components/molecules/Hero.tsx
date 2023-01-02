@@ -1,4 +1,4 @@
-import { Flex, Heading, Box, Image} from '@chakra-ui/react'
+import { Flex, Heading, Box, Image } from '@chakra-ui/react'
 
 export const Hero = () => (
   <Flex
@@ -6,7 +6,7 @@ export const Hero = () => (
     alignItems="center"
     height="100vh"
   >
-    <Box m={50} h={300} w={300}>
+    <Box m={50} w={300}>
       <Image src="/images/logo.png" alt='Dan Abramov' />
     </Box>
     <Flex
@@ -17,5 +17,5 @@ export const Hero = () => (
       <Heading fontSize={110} mb={-3}>Gonçalo</Heading>
       <Heading fontSize={110} mt={-3}>Nogueira</Heading>
     </Flex>
-  </Flex>
+  </Flex >
 )

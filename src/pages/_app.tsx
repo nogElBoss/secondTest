@@ -1,14 +1,21 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Flex } from '@chakra-ui/react'
+import { AnimatePresence } from 'framer-motion'
 
 import theme from '../theme'
 import Fonts from '../components/atoms/Fonts'
 import { AppProps } from 'next/app'
+import { Navbar } from '../components/organisms/Navbar'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Component {...pageProps} />
+      <Flex overflow="hidden" bgColor="black">
+        <Navbar />
+        <Component {...pageProps} />
+
+      </Flex>
+
     </ChakraProvider >
   )
 }
