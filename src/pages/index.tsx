@@ -20,8 +20,5 @@ const Index = () => (
       <Hero />
     </Flex>
   </motion.div>
-
-
 )
-
 export default Index

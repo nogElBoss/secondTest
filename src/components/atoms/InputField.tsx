@@ -4,7 +4,7 @@ import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 const { definePartsStyle, defineMultiStyleConfig } =
     createMultiStyleConfigHelpers(inputAnatomy.keys)
 
-const custom = definePartsStyle({
+const grayInput = definePartsStyle({
     field: {
         border: '0px',
         color: "white",
@@ -18,5 +18,5 @@ const custom = definePartsStyle({
 })
 
 export const inputTheme = defineMultiStyleConfig({
-    variants: { custom },
+    variants: { grayInput },
 })

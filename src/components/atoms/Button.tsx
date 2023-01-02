@@ -1,6 +1,6 @@
 import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
 
-const customVariant = defineStyle((props) => {
+const fullBlueButton = defineStyle((props) => {
     return {
         border: '4px',
         borderColor: `customBlue.500`,
@@ -20,5 +20,5 @@ const customVariant = defineStyle((props) => {
 })
 
 export const buttonTheme = defineStyleConfig({
-    variants: { customVariant },
+    variants: { fullBlueButton },
 })
