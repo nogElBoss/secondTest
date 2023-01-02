@@ -1,10 +1,13 @@
-import { Flex, Spacer } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import { Hero } from '../components/molecules/Hero'
-import { Navbar } from '../components/organisms/Navbar'
+import { motion } from 'framer-motion'
 
 const Index = () => (
-  <Flex>
-    <Navbar />
+  <motion.div
+    initial={{ x: "100%" }}
+    animate={{ x: "0%" }}
+    transition={{ duration: 1, ease: "easeOut" }}
+  >
     <Flex
       bgColor="black"
       height="100vh"
@@ -13,8 +16,9 @@ const Index = () => (
     >
       <Hero />
     </Flex>
-  </Flex>
-  
+  </motion.div>
+
+
 )
 
 export default Index
