@@ -13,6 +13,9 @@ const Index = () => (
       height="100vh"
       width="100vw"
       justifyContent="center"
+      bgImage="url(/images/bg.png)"
+      backgroundPosition="center"
+      backgroundSize="cover"
     >
       <Hero />
     </Flex>
